@@ -1,7 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Sofizmaty from "./pages/Sofizmaty.tsx";
+import Paradoksy from "./pages/paradoksy.tsx";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world! lool
-    </h1>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sofizmaty" element={<Sofizmaty />} />
+        <Route path="/paradoksy" element={<Paradoksy />} />
+      </Routes>
+    </>
   )
 }
