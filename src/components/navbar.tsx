@@ -4,9 +4,10 @@ import GitHubRepoWidget from './github_fetcher'
 type NavbarProps = {
 	logoSrc: string
 	logoAlt?: string
+	title: string
 }
 
-export default function Navbar({ logoSrc, logoAlt = 'Logo' }: NavbarProps) {
+export default function Navbar({ logoSrc, logoAlt = 'Logo', title }: NavbarProps) {
 	return (
 		<header className="sticky top-0 z-50 h-18 ">
 			<nav className="px-3 py-2">
@@ -19,7 +20,7 @@ export default function Navbar({ logoSrc, logoAlt = 'Logo' }: NavbarProps) {
 								className="h-8 w-8 object-contain border border-slate-300 rounded-md"
 								loading="lazy"
 							/>
-							<span className="text-slate-800 font-semibold tracking-tight">MathLOX/Sofizmaty</span>
+							<span className="text-slate-800 font-semibold tracking-tight">MathLOX/{title}</span>
 						</Link>
 					</div>
                     <GitHubRepoWidget />
