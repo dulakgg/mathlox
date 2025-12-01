@@ -20,7 +20,7 @@ export default function Navbar({ logoSrc, logoAlt = 'Logo', title }: NavbarProps
 								className="h-8 w-8 object-contain border border-slate-300 rounded-md"
 								loading="lazy"
 							/>
-							<span className="text-slate-800 font-semibold tracking-tight">MathLOX/{title}</span>
+							<span className="text-slate-800 font-semibold tracking-tight">MathLOX{title}</span>
 						</Link>
 					</div>
                     <GitHubRepoWidget />

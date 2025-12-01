@@ -5,7 +5,7 @@ export default function Sofizmaty() {
     return (
         <>
             <div className="">
-                <Navbar logoSrc={logo} title="Sofizmaty" />
+                <Navbar logoSrc={logo} title="/Sofizmaty" />
             </div>
         </>
     )
