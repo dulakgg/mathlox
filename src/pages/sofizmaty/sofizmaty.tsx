@@ -1,5 +1,5 @@
 import Navbar from "../../components/navbar";
-import logo from "../../assets/mathLox_icon.png"
+import logo from "../../assets/react.svg"
 import Sofizmat1 from "@/components/sofizmaty/sofizmat1";
 import Sofizmat2 from "@/components/sofizmaty/sofizmat2";
 

@@ -1,5 +1,5 @@
 import Navbar from "../../components/navbar";
-import logo from "../../assets/mathLox_icon.png" //import logo from "../../assets/react.svg"
+import logo from "../../assets/react.svg"
 import { useRef, useEffect, useState } from "react"
 import { motion} from 'framer-motion'
 

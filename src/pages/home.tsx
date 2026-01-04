@@ -1,5 +1,5 @@
 import Navbar from '@/components/navbar'
-import logo from "../assets/mathLox_icon.png"
+import logo from "../assets/react.svg"
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
