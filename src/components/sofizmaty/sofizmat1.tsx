@@ -1,21 +1,21 @@
 export default function Sofizmat1() {
   return (
-    <section>
+    <section className="w-fit border-2 border-purple-400  rounded-xl p-5 shadow-lg shadow-purple-400 hover:shadow-2xl hover:shadow-cyan-400 hover:border-cyan-400 hover:bg-zinc- hover:-translate-y-1 transition-all duration-500 ease-out mx-auto my-10 text-gray-400">
       <section className="max-w-3xl mx-auto px-4 py-6 space-y-6">
         <header className="space-y-1">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
-            Sofizmat 1
+          <p className="sm:text-3xl font-bold text-white">
+            Sofizmat 1:
           </p>
-          <h1 className="text-2xl sm:text-3xl font-bold text-black">
+          <h1 className="text-2xl sm:text-3xl font-bold text-white">
             Dowód, że <span className="font-mono">1 = 2</span>
           </h1>
         </header>
 
-        <section className="space-y-4 rounded-xl border border-slate-700 bg-slate-900/70 p-4 sm:p-6 shadow-lg">
-          <h2 className="text-lg font-semibold text-slate-100">
+        <section className="space-y-4 rounded-xl border-2 border-stone-950 p-4 sm:p-6 shadow-lg">
+          <h2 className="text-lg font-semibold">
             „Dowód” (błędne rozumowanie)
           </h2>
-          <ol className="list-decimal space-y-1 pl-5 text-slate-200">
+          <ol className="list-decimal space-y-1 pl-5">
             <li>
               Załóżmy, że <span className="italic">a = b</span>, gdzie{" "}
               <span className="italic">a, b ≠ 0</span>.
@@ -52,18 +52,18 @@ export default function Sofizmat1() {
           </ol>
         </section>
 
-        <section className="space-y-3 rounded-xl border border-amber-500/60 bg-amber-950/60 p-4 sm:p-5">
-          <h2 className="text-lg font-semibold text-amber-100">
+        <section className="space-y-3 rounded-xl border-2 border-stone-950 p-4 sm:p-5">
+          <h2 className="text-lg font-semibold">
             Wyjaśnienie błędu
           </h2>
-          <p className="text-sm sm:text-base text-amber-50">
+          <p className="text-sm sm:text-base">
             Kluczowy błąd pojawia się w kroku dzielenia przez{" "}
             <span className="italic">(a − b)</span>. Z założenia{" "}
             <span className="italic">a = b</span>, więc{" "}
             <span className="italic">a − b = 0</span>. Oznacza to, że w
             rzeczywistości dzielimy przez zero.
           </p>
-          <p className="text-sm sm:text-base text-amber-50">
+          <p className="text-sm sm:text-base">
             Dzielenie przez zero jest w matematyce niedozwolone, ponieważ
             prowadzi do sprzeczności i nie ma sensu. Od momentu podzielenia
             przez zero całe rozumowanie przestaje być poprawne, a otrzymany
