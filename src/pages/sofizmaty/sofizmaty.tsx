@@ -92,7 +92,7 @@ export default function Sofizmaty() {
               width: `${sofizmatyComponents.length * 100}vw`
             }}
           >
-            {sofizmatyComponents.map((item, index) => (
+            {sofizmatyComponents.map((item) => (
               <div
                 key={item.id}
                 className="w-screen h-full flex items-center justify-center p-4 flex-shrink-0"

@@ -1,6 +1,6 @@
 export default function Sofizmat2() {
   return (
-    <section className="w-fit border-2 border-purple-400  rounded-xl p-5 shadow-lg shadow-purple-400 hover:shadow-2xl hover:shadow-cyan-400 hover:border-cyan-400 hover:bg-zinc- hover:-translate-y-1 transition-all duration-500 ease-out mx-auto my-10 cursor-pointer text-gray-400">
+    <section className="w-fit border-2 border-purple-400  rounded-xl p-5 shadow-lg shadow-purple-400 hover:shadow-2xl hover:shadow-cyan-400 hover:border-cyan-400 hover:bg-zinc- hover:-translate-y-1 transition-all duration-500 ease-out mx-auto my-10 text-gray-400">
       <section className="max-w-3xl mx-auto px-4 py-6 space-y-6">
         <header className="space-y-1">
           <p className="sm:text-3xl font-bold text-white">
@@ -11,13 +11,13 @@ export default function Sofizmat2() {
           </h1>
         </header>
 
-        <section className="space-y-4 rounded-xl border-2 border-stone-950 p-4 sm:p-6 shadow-lg">
+        <section className="space-y-4 p-4 sm:p-6">
           <h2 className="text-lg font-semibold">
             „Dowód” (błędne rozumowanie)
           </h2>
           <ol className="list-decimal space-y-1 pl-5">
             <li>
-              Załóasdasżmy, że <span className="italic">a = b</span>, gdzie{" "}
+              Załóżmy, że <span className="italic">a = b</span>, gdzie{" "}
               <span className="italic">a, b ≠ 0</span>.
             </li>
             <li>
@@ -52,7 +52,7 @@ export default function Sofizmat2() {
           </ol>
         </section>
 
-        <section className="space-y-3 rounded-xl border-2 border-stone-950 p-4 sm:p-5">
+        <section className="space-y-3 rounded-xl p-4 sm:p-5">
           <h2 className="text-lg font-semibold">
             Wyjaśnienie błędu
           </h2>

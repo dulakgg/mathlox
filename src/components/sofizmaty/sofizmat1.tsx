@@ -11,7 +11,7 @@ export default function Sofizmat1() {
           </h1>
         </header>
 
-        <section className="space-y-4 rounded-xl border-2 border-stone-950 p-4 sm:p-6 shadow-lg">
+        <section className="space-y-4 p-4 sm:p-6">
           <h2 className="text-lg font-semibold">
             „Dowód” (błędne rozumowanie)
           </h2>
@@ -52,7 +52,7 @@ export default function Sofizmat1() {
           </ol>
         </section>
 
-        <section className="space-y-3 rounded-xl border-2 border-stone-950 p-4 sm:p-5">
+        <section className="space-y-3 rounded-xl p-4 sm:p-5">
           <h2 className="text-lg font-semibold">
             Wyjaśnienie błędu
           </h2>
