@@ -1,4 +1,4 @@
-export default function Sofizmat2() {
+export default function Sofizmat4() {
   return (
     <section className="relative w-fit mx-auto my-10 text-gray-400 group">
       <div className="pointer-events-none absolute -inset-[3px] rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-lg transition-all duration-500 ease-out group-hover:opacity-70 group-hover:blur-xl">

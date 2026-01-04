@@ -3,6 +3,8 @@ import Navbar from "../../components/navbar";
 import logo from "../../assets/mathLox_icon.png";
 import Sofizmat1 from "@/components/sofizmaty/sofizmat1";
 import Sofizmat2 from "@/components/sofizmaty/sofizmat2";
+import Sofizmat3 from "@/components/sofizmaty/sofizmat3";
+import Sofizmat4 from "@/components/sofizmaty/sofizmat4";
 
 export default function Sofizmaty() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,6 +14,8 @@ export default function Sofizmaty() {
   const sofizmatyComponents = [
     { id: 1, component: <Sofizmat1 /> },
     { id: 2, component: <Sofizmat2 /> },
+    { id: 3, component: <Sofizmat3 /> },
+    { id: 4, component: <Sofizmat4 /> },
   ];
 
   const scrollToSlide = (index: number) => {
