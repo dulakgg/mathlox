@@ -14,7 +14,7 @@ export default function Navbar({
 	logoSrc,
 	logoAlt = 'Logo',
 	title,
-	showThemeToggle = true,
+	showThemeToggle = false,
 }: NavbarProps) {
 	const [isDark, setIsDark] = useState(() => {
 		const savedTheme = localStorage.getItem('theme')
