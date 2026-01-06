@@ -86,10 +86,10 @@ export default function GitHubRepoWidget() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open dulakgg/mathlox on GitHub"
-                className="inline-flex items-center gap-2 h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm"
+                className="inline-flex items-center gap-2 h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-200 dark:hover:bg-zinc-900"
             >
                 {<FaStar color='orange' />}
-                <span className="text-slate-600">{repo ? ` ${repo.stargazers_count}` : ''}</span>
+                <span className="text-slate-600 dark:text-gray-400">{repo ? ` ${repo.stargazers_count}` : ''}</span>
                 <span className="font-medium">
                     MathLOX
                 </span>
@@ -100,23 +100,23 @@ export default function GitHubRepoWidget() {
                     onClick={toggle}
                     aria-expanded={open}
                     aria-haspopup="menu"
-                    className="inline-flex items-center h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm"
+                    className="inline-flex items-center h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-200 dark:hover:bg-zinc-900"
                 >
                     <IoIosArrowDropdownCircle scale={1}/>
                 </button>
             {open && (
-                <div role="menu" className="absolute right-0 top-full mt-2 w-80 max-w-[90vw] rounded-lg border border-slate-200 bg-white shadow-2xl">
-                    <div className="p-3 border-b border-slate-200 flex items-center justify-between">
+                <div role="menu" className="absolute right-0 top-full mt-2 w-80 max-w-[90vw] rounded-lg border border-slate-200 bg-white shadow-2xl dark:border-gray-800 dark:bg-gray-950">
+                    <div className="p-3 border-b border-slate-200 flex items-center justify-between dark:border-gray-800">
                         <a
                             href="https://github.com/dulakgg/mathlox"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm font-semibold text-slate-800 hover:underline"
+                            className="text-sm font-semibold text-slate-800 hover:underline dark:text-gray-200"
                         >
                             {repo?.full_name ?? 'dulakgg/mathlox'}
                         </a>
                         {!loading && repo && (
-                            <span className="text-xs text-slate-600">Stars: {repo.stargazers_count}</span>
+                            <span className="text-xs text-slate-600 dark:text-gray-400">Stars: {repo.stargazers_count}</span>
                         )}
                     </div>
                     <div className="p-3">
@@ -124,10 +124,10 @@ export default function GitHubRepoWidget() {
                             <div className="text-sm text-red-600">{error}</div>
                         )}
                         {!error && loading && (
-                            <div className="text-sm text-slate-600">Fetching contributors…</div>
+                            <div className="text-sm text-slate-600 dark:text-gray-400">Fetching contributors…</div>
                         )}
                         {!loading && !error && contributors.length === 0 && (
-                            <div className="text-sm text-slate-600">No contributors found.</div>
+                            <div className="text-sm text-slate-600 dark:text-gray-400">No contributors found.</div>
                         )}
                         {!loading && !error && contributors.length > 0 && (
                             <ul className="space-y-2">
@@ -142,12 +142,11 @@ export default function GitHubRepoWidget() {
                                             <img
                                                 src={c.avatar_url}
                                                 alt={c.login}
-                                                className="h-6 w-6 rounded-full border border-slate-200"
+                                                className="h-6 w-6 rounded-full border border-slate-200 dark:border-gray-700"
                                                 loading="lazy"
                                             />
-                                            <span className="text-sm text-slate-800">{c.login}</span>
+                                            <span className="text-sm text-slate-800 dark:text-gray-200">{c.login}</span>
                                         </a>
-                                        <span className="text-xs text-slate-600">{c.contributions} commits</span>
                                     </li>
                                 ))}
                             </ul>

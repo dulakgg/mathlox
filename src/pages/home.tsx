@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <>
     <Navbar logoSrc={logo} title=' '/>
-      <main className="relative z-10 min-h-screen text-black flex items-center justify-center p-6">
+      <main className="relative z-10 min-h-screen text-slate-900 dark:text-slate-50 flex items-center justify-center p-6">
         
       <div className="max-w-3xl w-full text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight drop-shadow-md">Mathlox</h1>
-        <p className="text-lg text-black mb-10">Wybierz ścieżkę</p>
+        <p className="text-lg text-slate-700 dark:text-slate-200 mb-10">Wybierz ścieżkę</p>
 
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-center">
           <div className="group relative w-64 sm:w-56">
