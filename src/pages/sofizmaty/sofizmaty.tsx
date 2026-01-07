@@ -2,6 +2,8 @@ import Navbar from "../../components/navbar";
 import logo from "../../assets/mathLox_icon.png";
 import Sofizmat1 from "@/components/sofizmaty/sofizmat1";
 import Sofizmat2 from "@/components/sofizmaty/sofizmat2";
+import Sofizmat3 from "@/components/sofizmaty/sofizmat3";
+import Sofizmat4 from "@/components/sofizmaty/sofizmat4";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
@@ -11,11 +13,15 @@ export default function Sofizmaty() {
   const [direction, setDirection] = useState<1 | -1>(1);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const lastNavAtRef = useRef(0);
-	const touchStartYRef = useRef<number | null>(null);
-	const touchEndYRef = useRef<number | null>(null);
+  const touchStartYRef = useRef<number | null>(null);
+  const touchEndYRef = useRef<number | null>(null);
+
+  // Stała dla liczby sofizmatów
+  const SOFIZMAT_COUNT = 4;
+  const MAX_INDEX = SOFIZMAT_COUNT - 1; // 3
 
   function mniejsza(next: number) {
-    return Math.max(0, Math.min(1, next));
+    return Math.max(0, Math.min(MAX_INDEX, next));
   }
 
   function goTo(next: number) {
@@ -85,6 +91,22 @@ export default function Sofizmaty() {
     }
   }
 
+  // Renderowanie odpowiedniego sofizmatu
+  const renderSofizmat = () => {
+    switch (index) {
+      case 0:
+        return <Sofizmat1 />;
+      case 1:
+        return <Sofizmat2 />;
+      case 2:
+        return <Sofizmat3 />;
+      case 3:
+        return <Sofizmat4 />;
+      default:
+        return <Sofizmat1 />;
+    }
+  };
+
   return (
     <div className="h-dvh overflow-hidden flex flex-col">
       <Navbar logoSrc={logo} title="/Sofizmaty" showThemeToggle={true} />
@@ -100,14 +122,14 @@ export default function Sofizmaty() {
             className="h-full"
           >
             <div
-          ref={scrollRef}
-          className="h-full overflow-y-auto overscroll-contain"
-          onWheel={scrollem}
-          onTouchStart={telefonStart}
-          onTouchMove={telefonMove}
-          onTouchEnd={telefonEnd}
-        >
-              {index === 0 ? <Sofizmat1 /> : <Sofizmat2 />}
+              ref={scrollRef}
+              className="h-full overflow-y-auto overscroll-contain"
+              onWheel={scrollem}
+              onTouchStart={telefonStart}
+              onTouchMove={telefonMove}
+              onTouchEnd={telefonEnd}
+            >
+              {renderSofizmat()}
             </div>
           </motion.div>
         </AnimatePresence>
@@ -126,7 +148,7 @@ export default function Sofizmaty() {
             <button
               type="button"
               onClick={() => goTo(index + 1)}
-              disabled={index === 1}
+              disabled={index === MAX_INDEX}
               aria-label="Następny sofizmat"
               className="h-10 w-10 rounded-full border border-slate-200 bg-white/80 text-slate-800 shadow-sm backdrop-blur transition-all duration-300 disabled:opacity-40 disabled:pointer-events-none hover:bg-white hover:scale-[1.03] dark:border-gray-800 dark:bg-gray-950/70 dark:text-gray-200 dark:hover:bg-gray-950"
             >
