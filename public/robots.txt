@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://mathlox.pl/sitemap.xml
 
 #     _   __                      __          __                ____                       __
 #    / | / /___       _________  / /_  ____  / /______   ____ _/ / /___ _      _____  ____/ /

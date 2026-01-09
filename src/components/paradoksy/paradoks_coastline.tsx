@@ -122,7 +122,7 @@ export default function Paradoks_coastline() {
             </SECTION_TEXT>
             <br/>
 
-            <div className="flex justify-center items-center gap-4 border-6 border-gray-500 bg-gray-500 rounded-4xl p-4 mt-4">
+            <div className="flex justify-center items-center gap-4 border-6 border-gray-300 bg-gray-800 rounded-4xl p-4 mt-4">
                 <motion.button
                     type="button"
                     aria-label="Wykonaj kolejny pomiar"
@@ -138,7 +138,7 @@ export default function Paradoks_coastline() {
                 <output
                     ref={labelRef}
                     aria-live="polite"
-                    className="w-full justify-center mt-2"
+                    className="w-full mt-2 block text-center text-white font-semibold"
                 >Obwód = </output>
             </div>
             <canvas

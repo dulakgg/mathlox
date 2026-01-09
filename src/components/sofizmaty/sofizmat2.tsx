@@ -1,9 +1,9 @@
 export default function Sofizmat2() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-6 space-y-6">
-      <section className="space-y-6 rounded-xl border border-slate-700 bg-slate-900/70 p-4 sm:p-6 shadow-lg">
+      <section className="space-y-6 rounded-xl border border-slate-700 bg-slate-900 p-4 sm:p-6 shadow-lg">
         <header className="space-y-1">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-400">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">
             Sofizmat 2
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-50">
