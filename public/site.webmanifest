@@ -1,0 +1,11 @@
+{
+  "name": "MathLOX",
+  "short_name": "MathLOX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCFFD2",
+  "theme_color": "#FCFFD2",
+  "icons": [
+    { "src": "/mathLox_icon.png", "sizes": "any", "type": "image/png" }
+  ]
+}

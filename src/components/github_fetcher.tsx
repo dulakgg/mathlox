@@ -98,14 +98,21 @@ export default function GitHubRepoWidget() {
                 <button
                     type="button"
                     onClick={toggle}
+                    aria-label="Pokaż współtwórców na GitHubie"
                     aria-expanded={open}
-                    aria-haspopup="menu"
+                    aria-haspopup="dialog"
+                    aria-controls="github-contributors-popover"
                     className="inline-flex items-center h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-200 dark:hover:bg-zinc-900"
                 >
                     <IoIosArrowDropdownCircle scale={1}/>
                 </button>
             {open && (
-                <div role="menu" className="absolute right-0 top-full mt-2 w-80 max-w-[90vw] rounded-lg border border-slate-200 bg-white shadow-2xl dark:border-gray-800 dark:bg-gray-950">
+                <div
+                    id="github-contributors-popover"
+                    role="dialog"
+                    aria-label="Współtwórcy projektu na GitHubie"
+                    className="absolute right-0 top-full mt-2 w-80 max-w-[90vw] rounded-lg border border-slate-200 bg-white shadow-2xl dark:border-gray-800 dark:bg-gray-950"
+                >
                     <div className="p-3 border-b border-slate-200 flex items-center justify-between dark:border-gray-800">
                         <a
                             href="https://github.com/dulakgg/mathlox"

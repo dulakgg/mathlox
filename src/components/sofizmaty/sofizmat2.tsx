@@ -6,9 +6,9 @@ export default function Sofizmat2() {
           <p className="text-xs font-semibold uppercase tracking-wide text-emerald-400">
             Sofizmat 2
           </p>
-          <h1 className="text-2xl sm:text-3xl font-bold text-slate-50">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-50">
             Dowód, że <span className="font-mono">1 = 0</span>
-          </h1>
+          </h2>
         </header>
 
         <div className="space-y-4">

@@ -1,17 +1,17 @@
-import {useRef, useEffect, useState} from "react"
+import {useRef, useEffect, useState, useCallback} from "react"
 import {motion} from 'framer-motion'
 import {TITLE, SECTION_TITLE, SECTION_TEXT, CARD} from "@/components/ui/format_tags.tsx";
 
-export default function Paradoks_coastline() {
-    const resolution = [3, 5, 7, 9, 11, 20];
+const RESOLUTION = [3, 5, 7, 9, 11, 20] as const;
 
+export default function Paradoks_coastline() {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
-    const labelRef = useRef<HTMLLabelElement | null>(null);
+    const labelRef = useRef<HTMLOutputElement | null>(null);
 
     const idx = useRef(0);
     const [canvasSize, setCanvasSize] = useState({width: 0, height: 0});
 
-    const drawNgon = (n: number, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
+    const drawNgon = useCallback((n: number, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
         const centerX = canvas.width / 2;
         const centerY = canvas.height / 2;
 
@@ -45,22 +45,22 @@ export default function Paradoks_coastline() {
         ctx.lineWidth = 10;
 
         ctx.stroke();
-    }
+    }, [canvasSize.height, canvasSize.width])
 
-    const draw = (change: boolean) => {
+    const draw = useCallback((change: boolean) => {
         const canvas = canvasRef.current;
-        if (!canvas) throw new Error("fuck, canvas not found!");
-        if (!labelRef.current) throw Error("fuck, label not found!");
+        if (!canvas) throw new Error("Canvas element not found");
+        if (!labelRef.current) throw new Error("Output element not found");
         const ctx = canvas.getContext("2d")
-        if (!ctx) throw new Error("2d context not supported, you 1d?");
+        if (!ctx) throw new Error("2D context not supported");
 
         if (change) idx.current++;
-        if (idx.current >= resolution.length) idx.current = 0;
-        drawNgon(resolution[idx.current], ctx, canvas);
-        const circumference = (2 * resolution[idx.current] * Math.sin(Math.PI / resolution[idx.current]))
+        if (idx.current >= RESOLUTION.length) idx.current = 0;
+        drawNgon(RESOLUTION[idx.current], ctx, canvas);
+        const circumference = (2 * RESOLUTION[idx.current] * Math.sin(Math.PI / RESOLUTION[idx.current]))
         const str = circumference.toLocaleString("pl-PL", {minimumFractionDigits: 3})
         labelRef.current.textContent = "Obwód = " + str.slice(0, str.indexOf('.', 0)) + " jednostek";
-    }
+    }, [drawNgon])
 
     useEffect(() => {
         const updateSize = () => {
@@ -79,7 +79,7 @@ export default function Paradoks_coastline() {
         if (canvasSize.width > 0) {
             draw(false);
         }
-    }, [canvasSize])
+    }, [canvasSize.width, draw])
 
 
     return (
@@ -125,7 +125,7 @@ export default function Paradoks_coastline() {
             <div className="flex justify-center items-center gap-4 border-6 border-gray-500 bg-gray-500 rounded-4xl p-4 mt-4">
                 <motion.button
                     type="button"
-                    aria-label="run animation"
+                    aria-label="Wykonaj kolejny pomiar"
                     onClick={() => {
                         draw(true)
                     }}
@@ -135,17 +135,19 @@ export default function Paradoks_coastline() {
                 >Kolejny pomiar
                 </motion.button>
                 <br/>
-                <label
-                    id="label"
+                <output
                     ref={labelRef}
+                    aria-live="polite"
                     className="w-full justify-center mt-2"
-                >Obwód = </label>
+                >Obwód = </output>
             </div>
             <canvas
                 id="canvas"
                 ref={canvasRef}
                 width={canvasSize.width}
                 height={canvasSize.height}
+                role="img"
+                aria-label="Animacja przybliżania obwodu koła wielokątami"
                 style={{display: "block", marginTop: "10px"}}
             />
         </CARD>

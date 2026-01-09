@@ -21,7 +21,7 @@ export const SECTION_TITLE = ({ children, className = "" }: TitleProps) => (
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const SECTION_TEXT = ({ children, className = "" }: TitleProps) => (
-    <h3 className={`text-1xl font-light text-center ${className}`}>{children}</h3>
+    <h3 className={`text-1xl font-light ${className}`}>{children}</h3>
 );
 
 // eslint-disable-next-line react-refresh/only-export-components

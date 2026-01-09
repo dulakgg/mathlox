@@ -7,8 +7,12 @@ import Sofizmat4 from "@/components/sofizmaty/sofizmat4";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
+import { useSeo } from "@/seo/useSeo";
+import { StructuredData } from "@/seo/structuredData";
 
 export default function Sofizmaty() {
+  useSeo("/sofizmaty");
+
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -110,7 +114,9 @@ export default function Sofizmaty() {
   return (
     <div className="h-dvh overflow-hidden flex flex-col">
       <Navbar logoSrc={logo} title="/Sofizmaty" showThemeToggle={true} />
-      <div className="relative flex-1 overflow-hidden">
+      <main id="main-content" className="relative flex-1 overflow-hidden" aria-label="Sofizmaty matematyczne">
+        <h1 className="sr-only">Sofizmaty matematyczne</h1>
+        <StructuredData pathname="/sofizmaty" />
         <AnimatePresence mode="wait" initial={false} custom={direction}>
           <motion.div
             key={index}
@@ -156,7 +162,7 @@ export default function Sofizmaty() {
             </button>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

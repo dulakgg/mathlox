@@ -17,6 +17,7 @@ export default function Navbar({
 	showThemeToggle = false,
 }: NavbarProps) {
 	const [isDark, setIsDark] = useState(() => {
+		if (typeof window === 'undefined') return false
 		const savedTheme = localStorage.getItem('theme')
 		return (
 			savedTheme === 'dark' ||
@@ -25,12 +26,14 @@ export default function Navbar({
 	})
 
 	useEffect(() => {
+		if (typeof window === 'undefined') return
 		document.documentElement.classList.toggle('dark', isDark)
 	}, [isDark])
 
 	function handleToggleTheme() {
 		setIsDark((prev) => {
 			const next = !prev
+			if (typeof window === 'undefined') return next
 			document.documentElement.classList.toggle('dark', next)
 			localStorage.setItem('theme', next ? 'dark' : 'light')
 			return next
@@ -39,10 +42,10 @@ export default function Navbar({
 
 	return (
 		<header className="sticky top-0 z-50 bg-white/70 dark:bg-gray-950 backdrop-blur border-b border-slate-200 dark:border-gray-800">
-			<nav className="mx-auto max-w-5xl px-3 sm:px-4 lg:px-6 py-2">
+			<nav aria-label="Główna nawigacja" className="mx-auto max-w-5xl px-3 sm:px-4 lg:px-6 py-2">
 				<div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
 					<div className="inline-flex items-center h-10 sm:h-12 px-3 border border-slate-200 dark:border-gray-400 rounded-lg shadow-2xl bg-white/80 dark:bg-zinc-900/90">
-						<Link to="/" className="inline-flex items-center gap-2 sm:gap-3 select-none min-w-0">
+						<Link to="/" aria-label="Strona główna" className="inline-flex items-center gap-2 sm:gap-3 select-none min-w-0">
 							<img
 								src={logoSrc}
 								alt={logoAlt}
