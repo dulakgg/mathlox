@@ -1,6 +1,8 @@
 {
-  "name": "MathLOX",
+  "name": "MathLOX — Matematyka, Sofizmaty i Paradoksy",
   "short_name": "MathLOX",
+  "description": "MathLOX to interaktywna platforma edukacyjna wyjaśniająca fascynujące zagadnienia matematyczne, sofizmaty i paradoksy.",
+  "categories": ["education", "math", "science"],
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FCFFD2",

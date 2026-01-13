@@ -8,9 +8,9 @@ export type SeoMeta = {
 export const DEFAULT_SEO: SeoMeta = {
   title: "MathLOX",
   description:
-    "MathLOX: krótkie, zrozumiałe wyjaśnienia z matematyki — sofizmaty matematyczne i paradoksy matematyczne.",
+    "MathLOX to interaktywna platforma edukacyjna wyjaśniająca fascynujące zagadnienia matematyczne. Zobacz słynne sofizmaty (błędne dowody) oraz paradoksy, które rzucają wyzwanie intuicji. Nauka matematyki w przystępnej formie.",
   keywords:
-    "matematyka, sofizmaty, sofizmaty matematyczne, paradoksy, paradoksy matematyczne, logika, dowody, błędne rozumowanie, fraktale, nieskończoność, Galileusz",
+    "matematyka, edukacja, sofizmaty, paradoksy, zagadki logiczne, dowody matematyczne, błędne rozumowanie, fraktale, nieskończoność, geometria, algebra, matura z matematyki, ciekawostki matematyczne, paradoks galileusza, paradoks wybrzeża, 1=2, dzielenie przez zero",
   ogType: "website",
 };
 
@@ -23,28 +23,28 @@ export function getSeoForPath(pathname: string): SeoMeta {
         ...DEFAULT_SEO,
         title: "MathLOX",
         description:
-          "MathLOX: krótkie, zrozumiałe wyjaśnienia z matematyki — sofizmaty matematyczne i paradoksy matematyczne.",
+          "MathLOX: Zrozum matematykę poprzez intrygujące sofizmaty i paradoksy. Odkryj błędy w logicznym myśleniu, fascynujące zagadki nieskończoności i dowiedz się, dlaczego intucja czasem zawodzi.",
       };
 
     case "/sofizmaty":
       return {
         ...DEFAULT_SEO,
-        title: "MathLOX - Sofizmaty",
+        title: "MathLOX",
         description:
-          "Sofizmaty matematyczne: przykłady błędnych dowodów (np. 1=2, 0=1) i dokładne wskazanie, gdzie jest błąd rozumowania.",
+          "Zbiór najciekawszych sofizmatów matematycznych. Dowiedz się, jak udowodnić, że 1=2 lub 2+2=5 i znajdź błąd w rozumowaniu. Ćwicz logiczne myślenie i analizę dowodów.",
         keywords:
-          "sofizmaty, sofizmaty matematyczne, błędne dowody, 1=2, 0=1, dzielenie przez zero, logika matematyczna, matematyka",
+          "sofizmaty, sofizmaty matematyczne, fałszywe dowody, błędne rozumowanie, 1=2, 0=1, dzielenie przez zero, pierwiastek arytmetyczny, logika matematyczna, zagadki matematyczne, błąd w dowodzie",
         ogType: "article",
       };
 
     case "/paradoksy":
       return {
         ...DEFAULT_SEO,
-        title: "MathLOX - Paradoksy",
+        title: "MathLOX",
         description:
-          "Paradoksy matematyczne: m.in. paradoks wybrzeża i paradoks Galileusza — intuicja kontra nieskończoność i skala pomiaru.",
+          "Poznaj słynne paradoksy matematyczne, które zmieniają postrzeganie rzeczywistości. Paradoks wybrzeża (fraktale) oraz Paradoks Galileusza (zbiory nieskończone).",
         keywords:
-          "paradoksy, paradoksy matematyczne, paradoks wybrzeża, fraktale, skala pomiaru, paradoks Galileusza, nieskończoność, Cantor, matematyka",
+          "paradoksy, paradoksy matematyczne, paradoks wybrzeża, długość wybrzeża, fraktale, mandelbrot, paradoks Galileusza, nieskończoność, zbiory liczalne, Cantor, intuicja matematyczna, paradoksy geometryczne",
         ogType: "article",
       };
 
