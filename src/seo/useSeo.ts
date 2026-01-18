@@ -59,7 +59,11 @@ export function useSeo(pathname: string) {
     upsertMetaByProperty("og:description", seo.description);
 
     const ORIGIN = "https://mathlox.pl";
-    const canonical = new URL(pathname, ORIGIN).toString();
+    // Ensure canonical URL does not have a trailing slash except for root
+    const canonicalPath = pathname.length > 1 && pathname.endsWith("/") 
+      ? pathname.slice(0, -1) 
+      : pathname;
+    const canonical = new URL(canonicalPath, ORIGIN).toString();
 
     upsertMetaByProperty("og:url", canonical);
     upsertLink("canonical", canonical);

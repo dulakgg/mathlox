@@ -117,6 +117,33 @@ export default function Sofizmaty() {
       <main id="main-content" className="relative flex-1 overflow-hidden" aria-label="Sofizmaty matematyczne">
         <h1 className="sr-only">Sofizmaty matematyczne</h1>
         <StructuredData pathname="/sofizmaty" />
+        
+        {/* SEO Content: Hidden description of all sofizmaty for crawlers */}
+        <article className="sr-only">
+          <h2>Sofizmaty Matematyczne - Kompendium</h2>
+          <p>Zbiór fascynujących sofizmatów matematycznych, czyli fałszywych dowodów, które na pierwszy rzut oka wydają się poprawne. Odkryj błędy w logicznym myśleniu.</p>
+          
+          <section>
+            <h3>Sofizmat 1: Dowód, że 1 = 2</h3>
+            <p>Klasyczny sofizmat algebraiczny opierający się na ukrytym dzieleniu przez zero. Zaczynamy od założenia a = b, wykonujemy przekształcenia algebraiczne: mnożenie przez a, odejmowanie b², rozkład na czynniki, aż dochodzimy do sprzeczności 2=1. Błąd tkwi w dzieleniu przez (a-b), które wynosi zero.</p>
+          </section>
+
+          <section>
+            <h3>Sofizmat 2: Dowód, że 1 = 0</h3>
+            <p>Sofizmat oparty na nieskończonym szeregu naprzemiennym (szereg Grandiego): 1 - 1 + 1 - 1 + ... Grupowanie wyrazów w różny sposób prowadzi do otrzymania wyniku 0 lub 1. Błąd polega na stosowaniu praw łączności dodawania do szeregu, który nie jest zbieżny.</p>
+          </section>
+
+          <section>
+            <h3>Sofizmat 3: Każda liczba jest równa liczbie mniejszej</h3>
+            <p>Kolejny przykład błędnego przekształcenia algebraicznego. Zakładamy a &gt; b, a = b + c. Poprzez mnożenie i przenoszenie wyrazów uzyskujemy równanie, które po skróceniu sugeruje fałszywą równość. Ponownie, kluczowym momentem jest dzielenie przez wyrażenie, które w rzeczywistości równa się zero.</p>
+          </section>
+
+          <section>
+            <h3>Sofizmat 4: Każdy trójkąt jest równoramienny</h3>
+            <p>Sofizmat geometryczny wykorzystujący niedokładność rysunku pomocniczego. Dowód opiera się na konstrukcji dwusiecznej kąta i symetralnej boku, które rzekomo przecinają się wewnątrz trójkąta. W rzeczywistości punkt ten leży na okręgu opisanym na trójkącie, co unieważnia wnioski o przystawaniu trójkątów prowadzące do tezy, że AB = AC.</p>
+          </section>
+        </article>
+
         <AnimatePresence mode="wait" initial={false} custom={direction}>
           <motion.div
             key={index}

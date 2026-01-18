@@ -12,7 +12,10 @@ export async function prerender(data: PrerenderData) {
   const seo = getSeoForPath(url);
 
   const ORIGIN = "https://mathlox.pl";
-  const canonical = new URL(url, ORIGIN).toString();
+  const canonicalPath = url.length > 1 && url.endsWith("/") 
+    ? url.slice(0, -1) 
+    : url;
+  const canonical = new URL(canonicalPath, ORIGIN).toString();
   const ogImage = new URL("/mathLox_icon.png", ORIGIN).toString();
 
   const html = renderToString(
