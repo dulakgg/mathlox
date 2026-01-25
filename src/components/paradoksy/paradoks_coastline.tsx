@@ -33,7 +33,7 @@ export default function Paradoks_coastline() {
 
         ctx.beginPath();
 
-        for (let i = 0; i <= n; i++) {
+        for (let i = 0; i <= n+1; i++) {
             const angle = (i / n) * Math.PI * 2;
             const x = centerX + Math.cos(angle) * r;
             const y = centerY + Math.sin(angle) * r;
@@ -148,6 +148,7 @@ export default function Paradoks_coastline() {
                 height={canvasSize.height}
                 role="img"
                 aria-label="Animacja przybliżania obwodu koła wielokątami"
+                className="block mx-auto"
                 style={{display: "block", marginTop: "10px"}}
             />
         </CARD>

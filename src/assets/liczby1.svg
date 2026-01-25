@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="11in"
+   height="8.5in"
+   viewBox="0 0 1056 816"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="liczby1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="in"
+     showgrid="true"
+     inkscape:zoom="0.69930781"
+     inkscape:cx="535.52955"
+     inkscape:cy="288.14207"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="in"
+       originx="0"
+       originy="0"
+       spacingx="96"
+       spacingy="96"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="95.893311"
+       id="text1"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="95.893311"
+         id="tspan3">1: 0.019573846205918374650...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="191.89331"
+       id="text1-8"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="191.89331"
+         id="tspan3-2">2: 0.271694830572048391756...</tspan><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="298.55994"
+         id="tspan4" /></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="287.89331"
+       id="text1-8-7"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="287.89331"
+         id="tspan3-2-1">3: 0.384720591684203957142...</tspan><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="394.55994"
+         id="tspan5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="383.89331"
+       id="text1-8-7-6"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="383.89331"
+         id="tspan3-2-1-1">4: 0.562908174630295847160...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="479.89331"
+       id="text1-8-7-6-2"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="479.89331"
+         id="tspan3-2-1-1-1">5: 0.695042187963150284617...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="575.89331"
+       id="text1-8-7-6-2-6"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="575.89331"
+         id="tspan3-2-1-1-1-1">6: 0.808315946207581493026...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="671.89331"
+       id="text1-8-7-6-2-6-9"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="671.89331"
+         id="tspan3-2-1-1-1-1-5">7: 0.947260381495027164839...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-stretch:condensed;font-size:85.3333px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:3.77953;paint-order:stroke markers fill"
+       x="30.900003"
+       y="767.89331"
+       id="text1-8-7-6-2-6-9-3"><tspan
+         sodipodi:role="line"
+         x="30.900003"
+         y="767.89331"
+         id="tspan6">...</tspan></text>
+  </g>
+</svg>

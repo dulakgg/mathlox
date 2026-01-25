@@ -1,4 +1,4 @@
-import {TITLE, SECTION_TITLE, SECTION_TEXT, CARD} from "@/components/ui/format_tags.tsx";
+import { TITLE, SECTION_TITLE, SECTION_TEXT, CARD } from "@/components/ui/format_tags.tsx";
 import GalileoVector from "@/assets/galileo.svg";
 
 
