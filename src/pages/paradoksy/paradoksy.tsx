@@ -5,10 +5,15 @@ import Paradoks_galileo from "@/components/paradoksy/paradoks_galileo";
 import { useSeo } from "@/seo/useSeo";
 import { StructuredData } from "@/seo/structuredData";
 import Paradoks_liczby from "@/components/paradoksy/paradoks_liczby";
+import { useEffect } from "react"
 
 export default function Paradoksy() {
     useSeo("/paradoksy");
-    localStorage.setItem("theme", "light")
+    useEffect(() => {
+        // Wymuszenie trybu jasnego po wejściu na stronę
+        localStorage.setItem("theme", "light");
+        document.documentElement.classList.remove("dark");
+    }, []);
     return (
         <>
             <div className="">
