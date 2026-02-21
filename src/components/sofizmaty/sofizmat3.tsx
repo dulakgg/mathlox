@@ -1,21 +1,21 @@
 export default function Sofizmat3() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-6 space-y-6">
-      <section className="space-y-6 rounded-xl border border-slate-700 bg-slate-900 p-4 sm:p-6 shadow-lg">
+      <section className="space-y-6 rounded-xl border border-slate-700 bg-[#02060f] text-slate-50 p-4 sm:p-6 shadow-lg">
         <header className="space-y-1">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">
+          <p className="text-md font-semibold uppercase tracking-wide text-[#1abdf7]">
             Sofizmat 3
           </p>
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-50">
+          <h2 className="text-2xl sm:text-3xl font-bold">
             Każda liczba jest równa dowolnej liczbie od niej mniejszej
           </h2>
         </header>
 
         <div className="space-y-4">
-          <h2 className="text-lg font-semibold text-slate-100">
+          <h2 className="text-lg font-semibold">
             „Dowód”
           </h2>
-          <div className="text-slate-200 space-y-4">
+          <div className="text-[#a9a298] space-y-4">
             <p>
               Jeśli liczba <span className="italic">a</span> jest większa od liczby{" "}
               <span className="italic">b</span>, to istnieje pewna liczba{" "}
@@ -24,7 +24,7 @@ export default function Sofizmat3() {
               mamy: <span className="font-mono">5 = 3 + 2</span>.
             </p>
             
-            <ol className="list-decimal space-y-2 pl-5">
+            <ol className="list-decimal space-y-2 pl-5 text-[#a9a298]">
               <li>
                 Mamy zatem: <span className="font-mono">a = b + c</span>
               </li>
@@ -57,10 +57,10 @@ export default function Sofizmat3() {
         <div className="h-px bg-slate-700/70" />
 
         <div className="space-y-3">
-          <h2 className="text-lg font-semibold text-amber-200">
+          <h2 className="text-lg font-semibold">
             Wyjaśnienie błędu
           </h2>
-          <div className="text-sm sm:text-base text-slate-200 space-y-3">
+          <div className="text-sm sm:text-base text-[#a9a298] space-y-3">
             <p>
               <span className="font-semibold">Stron równania nie można dzielić przez zero</span> – 
               przecież z tego, że <span className="font-mono">1 × 0 = 2 × 0</span>, nie wynika, że{" "}

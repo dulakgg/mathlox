@@ -1,21 +1,21 @@
 export default function Sofizmat4() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-6 space-y-6">
-      <section className="space-y-6 rounded-xl border border-slate-700 bg-slate-900 p-4 sm:p-6 shadow-lg">
+      <section className="space-y-6 rounded-xl border border-slate-700 bg-[#02060f] text-slate-50 p-4 sm:p-6 shadow-lg">
         <header className="space-y-1">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">
+          <p className="text-md font-semibold uppercase tracking-wide text-[#1abdf7]">
             Sofizmat 4
           </p>
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-50">
+          <h2 className="text-2xl sm:text-3xl font-bold">
             Każdy trójkąt jest równoramienny
           </h2>
         </header>
 
         <div className="space-y-4">
-          <h2 className="text-lg font-semibold text-slate-100">
+          <h2 className="text-lg font-semibold">
             „Dowód” 
           </h2>
-          <ol className="list-decimal space-y-1 pl-5 text-slate-200">
+          <ol className="list-decimal space-y-1 pl-5 text-[#a9a298]">
             <li>
               Weźmy dowolny trójkąt <span className="italic">ABC</span>.
             </li>
@@ -53,21 +53,21 @@ export default function Sofizmat4() {
         <div className="h-px bg-slate-700/70" />
 
         <div className="space-y-3">
-          <h2 className="text-lg font-semibold text-amber-200">
+          <h2 className="text-lg font-semibold">
             Wyjaśnienie błędu
           </h2>
-          <p className="text-sm sm:text-base text-slate-200">
+          <p className="text-sm sm:text-base text-[#a9a298]">
             Rysunek pomocniczy w tym "dowodzie" jest błędnie narysowany. W rzeczywistości punkt{" "}
             <span className="italic">D</span> (przecięcie dwusiecznej i symetralnej) leży{" "}
             <span className="italic">na zewnątrz</span> trójkąta, nie wewnątrz.
           </p>
-          <p className="text-sm sm:text-base text-slate-200">
+          <p className="text-sm sm:text-base text-[#a9a298]">
             Punkt <span className="italic">E</span> i <span className="italic">F</span> nie leżą na bokach trójkąta,
             lecz na ich przedłużeniach. Dlatego dodawanie odcinków{" "}
             <span className="font-mono">AE + BE</span> nie daje długości boku{" "}
             <span className="italic">AB</span>, gdyż punkty nie są odpowiednio ułożone.
           </p>
-          <p className="text-sm sm:text-base text-slate-200">
+          <p className="text-sm sm:text-base text-[#a9a298]">
             Jest to klasyczny przykład sofizmatu geometrycznego, gdzie błąd ukryty jest w nieprawidłowym rysunku.
           </p>
         </div>

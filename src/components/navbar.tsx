@@ -41,7 +41,7 @@ export default function Navbar({
 	}
 
 	return (
-		<header className="sticky top-0 z-50 bg-white/70 dark:bg-gray-950 backdrop-blur border-b border-slate-200 dark:border-gray-800">
+		<header className="sticky top-0 z-50 bg-white/70 dark:bg-[#02060f] backdrop-blur border-b border-slate-200 dark:border-gray-800">
 			<nav aria-label="Główna nawigacja" className="mx-auto max-w-5xl px-3 sm:px-4 lg:px-6 py-2">
 				<div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
 					<div className="inline-flex items-center h-10 sm:h-12 px-3 border border-slate-200 dark:border-gray-400 rounded-lg shadow-2xl bg-white/80 dark:bg-zinc-900/90">
@@ -52,7 +52,7 @@ export default function Navbar({
 								className="h-7 w-7 sm:h-8 sm:w-8 object-contain border border-slate-300 dark:border-gray-400 rounded-md shrink-0"
 								loading="lazy"
 							/>
-							<span className="truncate text-sm sm:text-base dark:text-gray-400 text-slate-800 font-semibold tracking-tight">
+							<span className="truncate text-sm sm:text-base dark:text-[#1abdf7] text-slate-800 font-semibold tracking-tight">
 								MathLOX{title}
 							</span>
 						</Link>
@@ -63,7 +63,7 @@ export default function Navbar({
 								type="button"
 								onClick={handleToggleTheme}
 								aria-label="Przełącz tryb jasny/ciemny"
-								className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white/80 px-3 py-2 text-sm font-medium text-slate-800 shadow-sm transition-colors hover:bg-white dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-200"
+								className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white/80 px-3 py-3 text-sm font-medium text-slate-800 shadow-sm transition-colors hover:bg-white dark:border-gray-700 dark:bg-zinc-900/90 dark:text-[#1abdf7]"
 							>
 								<span className="text-xs font-semibold uppercase tracking-wide">
 									{isDark ? 'Dark' : 'Light'}

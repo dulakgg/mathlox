@@ -86,7 +86,7 @@ export default function GitHubRepoWidget() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open dulakgg/mathlox on GitHub"
-                className="inline-flex items-center gap-2 h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-200 dark:hover:bg-zinc-900"
+                className="inline-flex items-center gap-2 h-12 px-4 rounded-lg border border-slate-200 bg-white/80 text-slate-800 hover:bg-white shadow-2xl text-sm dark:border-gray-700 dark:bg-zinc-900/90 dark:text-[#1abdf7] dark:hover:bg-zinc-900"
             >
                 {<FaStar color='orange' />}
                 <span className="text-slate-600 dark:text-gray-400">{repo ? ` ${repo.stargazers_count}` : ''}</span>
