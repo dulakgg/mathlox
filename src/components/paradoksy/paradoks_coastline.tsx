@@ -2,7 +2,7 @@ import {useRef, useEffect, useState, useCallback} from "react"
 import {motion} from 'framer-motion'
 import {TITLE, SECTION_TITLE, SECTION_TEXT, CARD} from "@/components/ui/format_tags.tsx";
 
-const RESOLUTION = [3, 5, 7, 9, 11, 20] as const;
+const RESOLUTION = [3, 5, 7, 9, 11, 20, 50] as const;
 
 export default function Paradoks_coastline() {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -15,7 +15,7 @@ export default function Paradoks_coastline() {
         const centerX = canvas.width / 2;
         const centerY = canvas.height / 2;
 
-        const r = canvasSize.width / 2 * 0.9;
+        const r = canvasSize.width / 2*0.9;
         ctx.clearRect(0, 0, canvasSize.width, canvasSize.height);
 
         ctx.beginPath();
@@ -27,7 +27,7 @@ export default function Paradoks_coastline() {
             else ctx.lineTo(x, y);
         }
         ctx.strokeStyle = "gray";
-        ctx.lineWidth = 5;
+        ctx.lineWidth = 10;
 
         ctx.stroke();
 
@@ -42,7 +42,7 @@ export default function Paradoks_coastline() {
         }
 
         ctx.strokeStyle = "black";
-        ctx.lineWidth = 10;
+        ctx.lineWidth = 7;
 
         ctx.stroke();
     }, [canvasSize.height, canvasSize.width])
@@ -59,7 +59,7 @@ export default function Paradoks_coastline() {
         drawNgon(RESOLUTION[idx.current], ctx, canvas);
         const circumference = (2 * RESOLUTION[idx.current] * Math.sin(Math.PI / RESOLUTION[idx.current]))
         const str = circumference.toLocaleString("pl-PL", {minimumFractionDigits: 3})
-        labelRef.current.textContent = "Obwód = " + str.slice(0, str.indexOf('.', 0)) + " jednostek";
+        labelRef.current.textContent = "Obwód = " + str.slice(0, str.indexOf('.', 0));
     }, [drawNgon])
 
     useEffect(() => {
@@ -116,8 +116,8 @@ export default function Paradoks_coastline() {
             <SECTION_TITLE>Animacja</SECTION_TITLE>
             <SECTION_TEXT>
                 Poniższa animacja pokazuje koncept zbliżony do paradoksu wybrzeża, natomiast z figurą o określonym obwodzie.
-                W tym przypadku obwód mierzony (czarne linie) będzie zbliżał się do obwodu koła, nie do nieskończoności.
-                Im mniejsze są nasze miarki, obwód bardziej zbliża się do prawdziwego obwodu, w kole - do pewnej liczby,
+                W tym przypadku obwód mierzony (czarne linie) będzie zbliżał się do obwodu koła (w tym przypadku o promieniu 1), nie do nieskończoności.
+                Im mniejsze są nasze miarki, obwód bardziej zbliża się do prawdziwego obwodu, w kole - do pewnej liczby (tutaj około 6.28),
                 a na wybrzeżu do nieskończoności. Animacja została wykonana w umownych "jednostkach".
             </SECTION_TEXT>
             <br/>
