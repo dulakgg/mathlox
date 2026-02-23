@@ -24,7 +24,7 @@ export default function Paradoks_galileo() {
 
                 Galileusz wskazał, że możemy stworzyć doskonałą parę:<br />
                 każdej liczbie naturalnej odpowiada dokładnie jeden jej kwadrat:<br />
-                <img className="w-full md:w-[50%]" style={{ display: "block", margin: "0 auto" }} src={GalileoVector} alt="Odwzorowanie 1:1 liczb i ich kwadratów" />
+                <img className="w-full md:w-[50%] max-w-lg" style={{ display: "block", margin: "0 auto" }} src={GalileoVector} alt="Odwzorowanie 1:1 liczb i ich kwadratów" />
 
                 Jeśli między dwoma zbiorami da się stworzyć taką jednoznaczną parę (odpowiedniość 1:1), to w pewnym sensie mają tyle samo elementów.<br /><br />
 

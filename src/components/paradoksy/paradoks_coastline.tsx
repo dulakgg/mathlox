@@ -148,7 +148,7 @@ export default function Paradoks_coastline() {
                 height={canvasSize.height}
                 role="img"
                 aria-label="Animacja przybliżania obwodu koła wielokątami"
-                className="block mx-auto"
+                className="block mx-auto w-[1/2] max-w-lg aspect-square"
                 style={{display: "block", marginTop: "10px"}}
             />
         </CARD>

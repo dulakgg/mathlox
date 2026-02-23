@@ -25,5 +25,5 @@ export const SECTION_TEXT = ({ children, className = "" }: TitleProps) => (
 );
 
 export const CARD = ({ children, className = "" }: CardProps) => (
-    <section className={`w-full md:w-3/4 p-[2%] rounded-4xl shadow-xl flex flex-col gap-0.5 border-t-8 border-b-8 md:border-8 md:border-gray-200 bg-gray-300 shadow-black mx-auto mt-10 mb-10 ${className}`}>{children}</section>
+    <section className={`w-11/12 md:w-3/4 p-[2%] rounded-4xl shadow-lg flex flex-col gap-0.5 border-t-8 border-b-8 border-8 md:border-gray-200 bg-gray-300 shadow-black mx-auto mt-10 mb-10 ${className}`}>{children}</section>
 );

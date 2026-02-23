@@ -23,11 +23,11 @@ export default function Paradoks_liczby() {
                 elementu drugiego zbioru.<br />
 
                 Spróbujmy więc przypisać kolejne liczby naturalne kolejnym liczbom rzeczywistym:
-                <img className="w-full md:w-[50%]" style={{ display: "block", margin: "0 auto" }} src={Liczby1Vector} alt="Kolejno przypisane liczby całkowite do rzeczywistych" />
+                <img className="w-full md:w-[50%] max-w-lg" style={{ display: "block", margin: "0 auto" }} src={Liczby1Vector} alt="Kolejno przypisane liczby całkowite do rzeczywistych" />
                 <br />
                 Wydawało by się, że możemy przypisać wszystkie liczby,
                 natomiast zawsze znajdziemy niezapisaną liczbę zmieniając po jednej cyfrze w rozwinięciach dziesiętnych liczb z listy.
-                <img className="w-full md:w-[50%]" style={{ display: "block", margin: "0 auto" }} src={Liczby2Vector} alt="Kolejno przypisane liczby całkowite do rzeczywistych + oznaczenie" />
+                <img className="w-full md:w-[50%] max-w-lg" style={{ display: "block", margin: "0 auto" }} src={Liczby2Vector} alt="Kolejno przypisane liczby całkowite do rzeczywistych + oznaczenie" />
                 Tak powstała liczba różni się od każdej zapisanej co najmniej jedną cyfrą,
                 więc nie znajduje się na liście.
                 Oznacza to, że nie da się wypisać wszystkich liczb rzeczywistych w ten sposób..
