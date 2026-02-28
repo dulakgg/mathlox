@@ -52,6 +52,10 @@ export default function Sofizmat4() {
 
         <div className="h-px bg-slate-700/70" />
 
+        <img src="/zalamanie_nerwowe.svg" alt="Diagram pokazujący błąd w sofizmacie" className="w-full h-auto" />
+        
+        <div className="h-px bg-slate-700/70" />
+
         <div className="space-y-3">
           <h2 className="text-lg font-semibold">
             Wyjaśnienie błędu
